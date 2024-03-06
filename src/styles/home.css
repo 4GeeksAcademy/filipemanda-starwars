@@ -1,0 +1,25 @@
+p {
+    color: red;
+    text-indent: 30px;
+    text-transform: uppercase;
+}
+body {
+    background-image: url("https://wallpapers.com/images/hd/star-wars-space-background-1920-x-1080-f1o3qr8zm0z4662c.jpg");
+    background-color: #cccccc;
+   }
+ .star {
+    color: yellow;
+    font-size: 60px
+ }
+
+ .wars {
+    color: yellow
+ }
+ .visual {
+    color: white;
+    font-size: 20px;
+
+ }
+ h5 {
+    color: yellow
+ }
