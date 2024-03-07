@@ -11,7 +11,7 @@ export const Demo = () => {
 	const [characters, setCharacters] = useState([])
 
 	useEffect(() => {
-		fetch("https://swapi.dev/api/people/")
+		fetch("https://www.swapi.tech/api/people/")
 			.then((resp) => resp.json())
 			.then((data) => (setCharacters(data.results)));
 	}, []);

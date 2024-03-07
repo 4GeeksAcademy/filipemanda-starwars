@@ -13,9 +13,9 @@ export const Details = () => {
 	var param = useParams()
 
 	useEffect(() => {
-		fetch("https://swapi.dev/api/people/" + param.id)
+		fetch("https://www.swapi.tech/api/people/" + param.id)
 			.then((resp) => resp.json())
-			.then((data) => (setCharacter(data)));
+			.then((data) => (setCharacter(data.result.properties)));
 	}, []);
 
 	return (
@@ -29,10 +29,14 @@ export const Details = () => {
 					<div className="col-md-8">
 						<div className="card-body">
 							<h5 className="card-title">{character.name}</h5>
-							<p>skin color:{character.skin_color}</p>
+							<p>height:{character.height}</p>
+							<p>mass:{character.mass}</p>
+							<p>hair color:{character.hair_color}</p>
 							<p>eye color:{character.eye_color}</p>
 							<p>birth year:{character.birth_year}</p>
-							<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<p>gender:{character.gender}</p>
+							<p>homeworld:{character.homeworld}</p>
+
 
 						</div>
 					</div>
